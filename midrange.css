@@ -1,3 +1,7 @@
+body {
+	background-color: black;
+	color: white;
+}
 .list1 {
 	list-style-type: none;
 }
@@ -6,4 +10,19 @@
 }
 .list3 {
 	list-style-type: none;
+}
+.card-body {
+	background-color: #101010;
+}
+.btn-primary {
+	background-color: #07478c;
+}
+.card {
+	border-color: #383d41;
+}
+hr{ 
+  height: 1px;
+  color: white;
+  background-color: white;
+  border: none;
 }
