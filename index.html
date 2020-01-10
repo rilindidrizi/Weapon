@@ -83,6 +83,7 @@
             <strong>Feed system:</strong> 15-round (standard) 10-30-round magazines available<br><hr>
             <strong>Sights:</strong> Iron sight attached<br><hr>
             <a class="btn btn-primary" href="beretta.html" target="_blank">More info</a>
+            <button class="button" id="like1">Like</button>
           </div>
         </div>
       </div>
@@ -102,6 +103,7 @@
             <strong>Effective fire range:</strong> 50 m<br><hr>
             <strong>Feed system:</strong> 15(standard) 6-33-round magazines available, 50-rounds drum magazine<br><hr>
             <a class="btn btn-primary" href="glock19.html" target="_blank">More info</a>
+            <button class="button" id="like2">Like</button>
            </div>
         </div>
       </div>
@@ -122,6 +124,7 @@
             <strong>Feed system:</strong> 10-15 rounds(.40S&W, .357SIG) 10-20 rounds(9X19mm Parabellum) 10 round polymer magazine(.22 LR)<br><hr>
             <strong>Sights:</strong> Iron sight attached<br><hr>
             <a class="btn btn-primary" href="p226.html" target="_blank">More info</a>
+            <button class="button" id="like3">Like</button>
           </div>
         </div>
       </div>
@@ -149,6 +152,7 @@
             <strong>Feed system:</strong> 10-17 round magazine(9X19mm Parabellum), 10-14 round magazine (.40S&W), 12 round magazine (.45 ACP)<br><hr>
             <strong>Sights:</strong> Interchangeable 3-dot iron sight<br><hr>
             <a class="btn btn-primary" href="ppq.html" target="_blank">More info</a>
+            <button class="button" id="like4">Like</button>
           </div>
         </div>
       </div>
@@ -168,6 +172,7 @@
             <strong>Feed system:</strong> Varies, 5+1 to 8+1 rounds; internal tube magazine<br><hr>
             <strong>Sights:</strong> Varies<br><hr>
             <a class="btn btn-primary" href="mossberg.html" target="_blank">More info</a>
+            <button class="button" id="like5">Like</button>
           </div>
         </div>
       </div>
@@ -186,6 +191,7 @@
             <strong>Feed system:</strong> 5+1 (civilian) or 7+1 (Military, LE) internal tube (Using 2.75 shells) magazine<br><hr>
             <strong>Sights:</strong> Ghost ring sight<br><hr>
             <a class="btn btn-primary" href="benelli.html" target="_blank">More info</a>
+            <button class="button" id="like6">Like</button>
           </div>
         </div>
       </div>
@@ -229,6 +235,52 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var button1 = document.getElementById("like1");
+    var num1 = 1;
+    var button2 = document.getElementById("like2");
+    var num2 = 1;
+    var button3 = document.getElementById("like3");
+    var num3 = 1;
+    var button4 = document.getElementById("like4");
+    var num4 = 1;
+    var button5 = document.getElementById("like5");
+    var num5 = 1;
+    var button6 = document.getElementById("like6");
+    var num6 = 1;
+
+    button1.addEventListener("click", mfnc1);
+    button2.addEventListener("click", mfnc2);
+    button3.addEventListener("click", mfnc3);
+    button4.addEventListener("click", mfnc4);
+    button5.addEventListener("click", mfnc5);
+    button6.addEventListener("click", mfnc6);
+
+    function mfnc1() {
+      button1.innerHTML = "Like " + num1++;
+      button1.removeEventListener("click", mfnc1);
+    }
+    function mfnc2() {
+      button2.innerHTML = "Like " + num2++;
+      button2.removeEventListener("click", mfnc2);
+    }
+    function mfnc3() {
+      button3.innerHTML = "Like " + num3++;
+      button3.removeEventListener("click", mfnc3);
+    }
+    function mfnc4() {
+      button4.innerHTML = "Like " + num4++;
+      button4.removeEventListener("click", mfnc4);
+    }
+    function mfnc5() {
+      button5.innerHTML = "Like " + num5++;
+      button5.removeEventListener("click", mfnc5);
+    }
+    function mfnc6() {
+      button6.innerHTML = "Like " + num6++;
+      button6.removeEventListener("click", mfnc6);
+    }
+  </script>
 
 </body>
 

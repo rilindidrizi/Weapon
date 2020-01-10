@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Long range | Gun description</title>
+  <title>Weapons | Long range | Gun description</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -78,6 +78,7 @@
             <strong>Feed system:</strong> 10-round detachable box magazine<br><hr>
             <strong>Sights:</strong> MIL-STD-1913 rail<br><hr>
             <a class="btn btn-primary" href="m82.html" target="_blank">More info</a>
+            <button class="button" id="like1">Like</button>
           </div>
         </div>
       </div>
@@ -100,6 +101,7 @@
             <strong>Feed system:</strong> 5-round box magazine<br><hr>
             <strong>Sights:</strong>  Mil spec Mk II in 6x, 10x and standard iron sights<br><hr>
             <a class="btn btn-primary" href="aw50.html" target="_blank">More info</a>
+            <button class="button" id="like2">Like</button>
           </div> 
         </div>
       </div>
@@ -125,7 +127,8 @@
             <strong>Feed system:</strong> 5-round detachable magazine<br><hr>
             <strong>Sights:</strong>  Detachable Aperture Type iron sights<br> 
             Day or Night optics<br><hr>
-            <a class="btn btn-primary" href="awm.html" target="_blank">More info</a></p>
+            <a class="btn btn-primary" href="awm.html" target="_blank">More info</a>
+            <button class="button" id="like3">Like</button>
           </div>
         </div>
       </div>
@@ -145,6 +148,31 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var button1 = document.getElementById("like1");
+    var num1 = 1;
+    var button2 = document.getElementById("like2");
+    var num2 = 1;
+    var button3 = document.getElementById("like3");
+    var num3 = 1;
+
+    button1.addEventListener("click", fun1);
+    button2.addEventListener("click", fun2);
+    button3.addEventListener("click", fun3);
+    
+    function fun1() {
+      button1.innerHTML = "Like " + num1++;
+      button1.removeEventListener("click", fun1);
+    }
+    function fun2() {
+      button2.innerHTML = "Like " + num2++;
+      button2.removeEventListener("click", fun2);
+    }
+    function fun3() {
+      button3.innerHTML = "Like " + num3++;
+      button3.removeEventListener("click", fun3);
+    }
+  </script>
 
 </body>
 </html>

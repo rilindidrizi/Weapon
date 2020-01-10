@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Mid-range | Gun description</title>
+  <title>Weapons | Mid-range | Gun description</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -79,6 +79,7 @@
             <strong>Sights:</strong> 100–800 m adjustable iron sights<br><hr>
             <strong>Sight radius:</strong> 378 mm (14.9 in)<br><hr>
             <a class="btn btn-primary" href="ak.html" target="_blank">More info</a>
+            <button class="button" id="like1">Like</button>
           </div>
         </div>
       </div>
@@ -99,6 +100,7 @@
             <strong>Feed system:</strong> 20-30 round detachable magazine, 100 rounds drum magazine <br><hr>
             <strong>Sights:</strong> Iron sights or various optics<br><hr>
             <a class="btn btn-primary" href="m16.html" target="_blank">More info</a>
+            <button class="button" id="like2">Like</button>
           </div> 
         </div>
       </div>
@@ -118,7 +120,8 @@
             <strong>Maximum fire range:</strong> 3700 m<br><hr>
             <strong>Feed system:</strong> 10-30 round detachable magazine<br><hr>
             <strong>Sights:</strong> Various optics<br><hr>
-            <a class="btn btn-primary" href="mpx.html" target="_blank">More info</a></p>
+            <a class="btn btn-primary" href="mpx.html" target="_blank">More info</a>
+            <button class="button" id="like3">Like</button>
           </div>
         </div>
       </div>
@@ -143,6 +146,7 @@
             <strong>Feed system:</strong> SCAR-L: STANAG box magazine <br><hr>
             <strong>Sights:</strong> Iron sights and Piccatiny rail for various optical sights<br><hr>
             <a class="btn btn-primary" href="scar.html" target="_blank">More info</a>
+            <button class="button" id="like4">Like</button>
           </div>
         </div>
       </div>
@@ -163,7 +167,9 @@
             <strong>Effective fire range:</strong> 300-800 m<br><hr>
             <strong>Feed system:</strong> 10-30 round detachable magazine SATANG magazine<br>
             100 round detachable Beta C-Mag<br><hr>
-            <strong>Sights:</strong> Piccatiny rail mounted front and rear, iron sight<br><hr>                                                                <a class="btn btn-primary" href="416.html" target="_blank">More info</a></p>
+            <strong>Sights:</strong> Piccatiny rail mounted front and rear, iron sight<br><hr>                                                                
+            <a class="btn btn-primary" href="416.html" target="_blank">More info</a>
+            <button class="button" id="like5">Like</button>
           </div>
         </div>
       </div>
@@ -187,7 +193,8 @@
             <strong>Feed system:</strong> FAMAS F1: 25-round detachable magazine<br>
             FAMAS G2: 30-round detachable magazine (SATANG)<br><hr>
             <strong>Sights:</strong>  Rear aperture fitted with tritium night inserts, front post<br><hr>
-            <a class="btn btn-primary" href="famas.html" target="_blank">More info</a></p>
+            <a class="btn btn-primary" href="famas.html" target="_blank">More info</a>
+            <button class="button" id="like6">Like</button>
           </div>
         </div>
       </div>
@@ -207,6 +214,52 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var button1 = document.getElementById("like1");
+    var num1 = 1;
+    var button2 = document.getElementById("like2");
+    var num2 = 1;
+    var button3 = document.getElementById("like3");
+    var num3 = 1;
+    var button4 = document.getElementById("like4");
+    var num4 = 1;
+    var button5 = document.getElementById("like5");
+    var num5 = 1;
+    var button6 = document.getElementById("like6");
+    var num6 = 1;
+
+  	button1.addEventListener("click", myFunction1);
+  	button2.addEventListener("click", myFunction2);
+  	button3.addEventListener("click", myFunction3);
+  	button4.addEventListener("click", myFunction4);
+  	button5.addEventListener("click", myFunction5);
+  	button6.addEventListener("click", myFunction6);
+
+  	function myFunction1() {
+  		button1.innerHTML = "Like " + num1++;
+  		button1.removeEventListener("click", myFunction1);
+  	}
+  	function myFunction2() {
+  		button2.innerHTML = "Like " + num2++;
+  		button2.removeEventListener("click", myFunction2);
+  	}
+  	function myFunction3() {
+  		button3.innerHTML = "Like " + num3++;
+  		button3.removeEventListener("click", myFunction3);
+  	}
+  	function myFunction4() {
+  		button4.innerHTML = "Like " + num4++;
+  		button4.removeEventListener("click", myFunction4);
+  	}
+  	function myFunction5() {
+  		button5.innerHTML = "Like " + num5++;
+  		button5.removeEventListener("click", myFunction5);
+  	}
+  	function myFunction6() {
+  		button6.innerHTML = "Like " + num6++;
+  		button6.removeEventListener("click", myFunction6);
+  	}
+  </script>
 
 </body>
 </html>
