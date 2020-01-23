@@ -92,6 +92,6 @@ hr{
 }
 
 #list > li:hover{
-      background-color: black;
+      background-color: gray;
       border-radius: 1rem;
 }
